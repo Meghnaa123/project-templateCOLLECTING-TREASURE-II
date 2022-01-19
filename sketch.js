@@ -16,7 +16,7 @@ function preload(){
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
  //write a code to load the image named gameOver.png
- 
+ gameOverImg=loadImage ("gameOver.png")
 }
 
 function setup(){
@@ -90,8 +90,9 @@ function draw() {
 //create a sprite
 //add a animation for gameover
 //scale the gameover image
-
-       
+        gameOver=createSprite (200,300,10,10)
+        gameOver.addImage (gameOverImg)
+        gameOver.scale=0.5
      
     }
   }
